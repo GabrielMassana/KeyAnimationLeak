@@ -79,7 +79,7 @@
     CALayer *layer = self.animationImageView.layer;
     
     [layer addAnimation:keyframeAnimation
-                 forKey:@"flingAnimation"];
+                 forKey:@"girlAnimation"];
 }
 
 #pragma mark - CAAnimationDelegate
@@ -88,8 +88,8 @@
 {
     if (flag)
     {
-        [self.view.layer removeAllAnimations];
-        [self.animationImageView.layer removeAnimationForKey:@"flingAnimation"];
+        [self.animationImageView.layer removeAllAnimations];
+        [self.animationImageView.layer removeAnimationForKey:@"girlAnimation"];  // just in case
     }
 }
 
